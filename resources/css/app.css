@@ -1,0 +1,115 @@
+/** RESET CSS /**
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,h1{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui,serif;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0;
+    border: 0;
+}   
+/****************************************/
+
+
+
+a .rotate{
+    width: 30px;
+    display: inline-block;
+    animation: spin-reverse 4s linear infinite ;
+    color: rgb(150, 111, 67);
+}
+a svg{
+    width: 50px;
+    display: block;
+    animation: spin 4s linear infinite ;
+    color: rgb(255, 136, 0);
+}
+
+@keyframes spin {
+    100%{transform: rotate(360deg);}
+}
+@keyframes spin-reverse {
+    100%{transform: rotate(-360deg);}
+}
+
+h1{
+    text-align: center;
+}
+form{
+    font-size: 100%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+
+}
+form input[type=text],input[type=password] {
+    border: 1px solid rgba(173, 169, 169, 0.801);    
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 100%;
+    border-radius: 5px;
+
+}
+button{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 100%;
+    border-radius: 5px;
+    background-color: rgba(223, 163, 51, 0.678);    
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;   
+    
+}
+button:hover{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);  
+    background-color: rgb(223, 163, 51);    
+    
+}   
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;  
+    /* flex-direction: column;   */
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+
+
+
